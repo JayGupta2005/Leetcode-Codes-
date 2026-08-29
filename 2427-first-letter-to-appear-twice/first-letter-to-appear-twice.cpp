@@ -1,12 +1,12 @@
 class Solution {
 public:
     char repeatedCharacter(string s) {
-        map<char,int>mp;
+        set<char> st;
         for(char ch : s){
-            if(mp.count(ch)){
+            if(st.count(ch)){
                 return ch;
             }else{
-                mp[ch]++;
+                st.insert(ch);
             }
         }
         return 'a';
