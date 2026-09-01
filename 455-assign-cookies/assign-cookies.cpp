@@ -8,7 +8,7 @@ public:
         int j=0;
         int count = 0;
         while(i<g.size() && j<s.size()){
-            if(s[j] >= g[i]) {
+            if(g[i] <= s[j]) {
                 count++;
                 i++;
                 j++;
