@@ -16,9 +16,6 @@ public:
         sort(v.begin(), v.end(), [](auto &a, auto &b){
             return a.first * b.second < b.first * a.second;
         });
-        vector<int> ans;
-        ans.push_back(v[k-1].first);
-        ans.push_back(v[k-1].second);
-        return  ans;
+        return {v[k-1].first, v[k-1].second};
     }
 };
